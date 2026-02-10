@@ -7,10 +7,15 @@ on:
 jobs:
   build:
 
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
+
+    - name: Set up Swift
+      uses: swift-actions/setup-swift@v2
+      with:
+        swift-version: '5.9'
 
     - name: Set up Go
       uses: actions/setup-go@v4

@@ -1,6 +1,6 @@
 .PHONY: init
 init:
-	go install github.com/TBXark/telegram-bot-api-types@latest
+	go install github.com/tbxark/telegram-bot-api-types@latest
 
 .PHONY: gen
 gen:
